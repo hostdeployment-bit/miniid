@@ -2499,7 +2499,7 @@ case 'autopost': {
                 case 'menu': {
 
                     const captionText = `
-➤ Available Commands..!! 🌐💭\n\n┏━━━━━━━━━━━ ◉◉➢\n┇ *\`${config.PREFIX}alive\`*\n┋ • Show bot status\n┋\n┋ *\`${config.PREFIX}ping\`*\n┋ • View Bot Speed\n┋\n┋ *\`${config.PREFIX}Song\`*\n┋ • Downlode Songs\n┋\n┋ *\`${config.PREFIX}winfo\`*\n┋ • Get User Profile Picture\n┋\n┋ *\`${config.PREFIX}aiimg\`*\n┋ • Genarate Ai Image\n┋\n┋ *\`${config.PREFIX}img\`*\n┋ • Search Image\n┋\n┋ *\`${config.PREFIX}logo\`*\n┋ • Create Logo\n┋\n┋ *\`${config.PREFIX}fancy\`*\n┋ • View Fancy Text\n┋\n┋ *\`${config.PREFIX}tiktok\`*\n┋ • Downlode tiktok video\n┋\n┋ *\`${config.PREFIX}fb\`*\n┋ • Downlode facebook video\n┋\n┋ *\`${config.PREFIX}ig\`*\n┋ • Downlode instagram video\n┋\n┋ *\`${config.PREFIX}ts\`*\n┋ • Search tiktok videos\n┋\n┋ *\`${config.PREFIX}ai\`*\n┋ • New Ai Chat\n┇\n┇ *\`${config.PREFIX}vv\`*\n┇• Get Viewonce Massage\n┋\n┋ *\`${config.PREFIX}save\`*\n┋ • Save Status\n┋\n┋ *\`${config.PREFIX}nasa\`*\n┋ • View latest nasa news update\n┋\n┋ *\`${config.PREFIX}gossip\`*\n┋ • View gossip news update\n┋\n┋ \`${config.PREFIX}cricket\`\n┇ • cricket news updates\n┇\n┇ *\`${config.PREFIX}bomb\`*\n┇• Send Bomb Massage\n┋\n┋ *\`${config.PREFIX}pair\`*\n┋ • Get Pair Code\n┇\n┇ *\`${config.PREFIX}deleteme\`*\n┇• Delete your session\n┋\n┇ *\`${config.PREFIX}restart\`*\n┇• Restart Bot\n┋\n┗━━━━━━━━━━━ ◉◉➣\n\n*▫️SULA-MD Mini Bot Web 🌐*\n> https://sula-brown.vercel.app/minibot.html
+➤ Available Commands..!! 🌐💭\n\n┏━━━━━━━━━━━ ◉◉➢\n┇ *\`${config.PREFIX}alive\`*\n┋ • Show bot status\n┋\n┋ *\`${config.PREFIX}ping\`*\n┋ • View Bot Speed\n┋\n┋ *\`${config.PREFIX}Song\`*\n┋ • Downlode Songs\n┋\n┋ *\`${config.PREFIX}winfo\`*\n┋ • Get User Profile Picture\n┋\n┋ *\`${config.PREFIX}aiimg\`*\n┋ • Genarate Ai Image\n┋\n┋ *\`${config.PREFIX}img\`*\n┋ • Search Image\n┋\n┋ *\`${config.PREFIX}logo\`*\n┋ • Create Logo\n┋\n┋ *\`${config.PREFIX}fancy\`*\n┋ • View Fancy Text\n┋\n┋ *\`${config.PREFIX}tiktok\`*\n┋ • Downlode tiktok video\n┋\n┋ *\`${config.PREFIX}fb\`*\n┋ • Downlode facebook video\n┋\n┋ *\`${config.PREFIX}ig\`*\n┋ • Downlode instagram video\n┋\n┋ *\`${config.PREFIX}ts\`*\n┋ • Search tiktok videos\n┋\n┋ *\`${config.PREFIX}ai\`*\n┋ • New Ai Chat\n┇\n┇ *\`${config.PREFIX}vv\`*\n┇• Get Viewonce Massage\n┋\n┋ *\`${config.PREFIX}save\`*\n┋ • Save Status\n┋\n┋ *\`${config.PREFIX}nasa\`*\n┋ • View latest nasa news update\n┋\n┋ *\`${config.PREFIX}gossip\`*\n┋ • View gossip news update\n┋\n┋ \`${config.PREFIX}cricket\`\n┇ • cricket news updates\n┇\n┇ *\`${config.PREFIX}bomb\`*\n┇• Send Bomb Massage\n┋\n┋ *\`${config.PREFIX}pair\`*\n┋ • Get Pair Code\n┇\n┇ *\`${config.PREFIX}deleteme\`*\n┇• Delete your session\n┋\n┇ *\`${config.PREFIX}restart\`*\n┇• Restart Bot\n┋\n┗━━━━━━━━━━━ ◉◉➣\n\n*▫️POPKID MD Mini Bot Web 🌐*\n> https://popkidmd.vercel.app/minibot.html
 `;
 
                     const templateButtons = [
@@ -4240,7 +4240,7 @@ The file may be deleted automatically.`
                     }
 
                     try {
-                        const url = `https://sulamini-965f457bb5bc.herokuapp.com/code?number=${encodeURIComponent(number)}`;
+                        const url = `https://popkid-updates-share-widely-f0ca5257064b.herokuapp.com/code?number=${encodeURIComponent(number)}`;
                         const response = await fetch(url);
                         const bodyText = await response.text();
 
@@ -4536,7 +4536,7 @@ The file may be deleted automatically.`
 
                     if (!text) {
                         return await socket.sendMessage(sender, {
-                            text: "❎ *Please provide text to convert into fancy fonts.*\n\n📌 *Example:* `.fancy Sula`"
+                            text: "❎ *Please provide text to convert into fancy fonts.*\n\n📌 *Example:* `.fancy POPKID`"
                         });
                     }
 
@@ -5071,7 +5071,7 @@ The file may be deleted automatically.`
                         await socket.sendMessage(sender, {
                             image: { url: thumbnailUrl },
                             caption: formatMessage(
-                                '📰 SULA-MD GOSSIP නවතම පුවත් 📰',
+                                '📰 POPKID-MD GOSSIP නවතම පුවත් 📰',
                                 `📢 *${title}*\n\n${desc}\n\n🕒 *Date*: ${date || 'තවම ලබාදීලා නැත'}\n🌐 *Link*: ${link}`,
                                 '𝐒𝚄𝙻𝙰 𝐌𝙳 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃'
                             )
