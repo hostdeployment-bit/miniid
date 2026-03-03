@@ -3,8 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-  <title>𝐒𝚄𝙻𝙰 𝐌𝙳 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃</title>
+  <title>POPKIDMD</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+
+  <!-- iPhone-like Font -->
+  <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;600;700&display=swap" rel="stylesheet">
+
   <style>
     body {
       display: flex;
@@ -12,9 +16,11 @@
       align-items: center;
       height: 100vh;
       margin: 0;
-      background: black;
-      font-family: Arial, sans-serif;
+      font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
       overflow: hidden;
+
+      /* iPhone gradient background */
+      background: linear-gradient(135deg, #1c1c1e, #2c2c2e, #3a3a3c);
     }
 
     .container {
@@ -26,29 +32,36 @@
 
     .box {
       width: 320px;
-      padding: 20px;
-      background-color: black;
-      border-radius: 10px;
+      padding: 25px;
+      border-radius: 25px;
+
+      /* Glass Effect */
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(25px);
+      -webkit-backdrop-filter: blur(25px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+
       text-align: center;
-      box-shadow: 0 0 25px #00f2ff;
-      z-index: 2;
+      box-shadow: 0 8px 40px rgba(0, 0, 0, 0.6);
     }
 
-    @keyframes flicker {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.6; text-shadow: 0 0 5px #0ff, 0 0 20px #0ff; }
-    }
-
-    h3, h6 {
-      color: #00f2ff;
-      animation: flicker 2s infinite alternate;
+    h3 {
+      color: white;
+      font-weight: 700;
+      letter-spacing: 1px;
       margin: 10px 0;
+    }
+
+    h6 {
+      color: #d1d1d6;
+      font-weight: 400;
+      margin: 8px 0;
     }
 
     .input-container {
       display: flex;
       width: 100%;
-      margin-top: 15px;
+      margin-top: 20px;
     }
 
     .input-container input,
@@ -58,71 +71,70 @@
       border: none;
       outline: none;
       box-sizing: border-box;
-      transition: none !important;
-      transform: none !important;
-      resize: none !important;
-      appearance: none;
     }
 
     .input-container input {
       width: 70%;
-      border-radius: 0.8rem 0 0 0.8rem;
-      background: #e0f7ff;
-      color: #000;
+      border-radius: 15px 0 0 15px;
+      background: rgba(255, 255, 255, 0.15);
+      color: white;
       padding-left: 1rem;
+      backdrop-filter: blur(10px);
+    }
+
+    .input-container input::placeholder {
+      color: #c7c7cc;
     }
 
     .input-container button {
       width: 30%;
-      border-radius: 0 0.8rem 0.8rem 0;
-      background: #00bfff;
-      color: #fff;
-      font-weight: bold;
+      border-radius: 0 15px 15px 0;
+      background: rgba(0, 122, 255, 0.8);
+      color: white;
+      font-weight: 600;
       cursor: pointer;
+      transition: 0.3s ease;
     }
 
     .input-container button:hover {
-      background: #00ffff;
-      color: #000;
+      background: rgba(0, 122, 255, 1);
     }
 
     a.centered-text {
-      color: white;
+      color: #d1d1d6;
       display: block;
       margin-top: 20px;
-      font-weight: bold;
+      font-weight: 500;
     }
 
-    /* Neon dot background animation */
+    /* Soft floating background bubbles */
     .neon-bg {
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      background: black;
       overflow: hidden;
       z-index: 1;
     }
 
     .dot {
       position: absolute;
-      width: 4px;
-      height: 4px;
-      background: #00ffff;
+      width: 8px;
+      height: 8px;
+      background: rgba(255, 255, 255, 0.15);
       border-radius: 50%;
-      animation: rise 5s linear infinite;
-      opacity: 0.6;
+      animation: rise 10s linear infinite;
     }
 
     @keyframes rise {
       0% {
-        transform: translateY(100vh) scale(0.5);
+        transform: translateY(100vh) scale(0.6);
         opacity: 0.2;
       }
       100% {
         transform: translateY(-10vh) scale(1);
-        opacity: 1;
+        opacity: 0.8;
       }
     }
   </style>
@@ -133,13 +145,13 @@
   <div class="container">
     <div class="box" id="box">
       <div id="text">
-        <i class="fa fa-user" style="color:#00ffff;"></i>
-        <h3>𝐒𝐔𝐋𝐀-𝐌𝐃 𝐅𝐑𝐄𝐄 𝐁𝐎𝐓</h3>
-        <h6>𝙲𝚁𝙴𝙰𝚃𝙴 𝙱𝚈 𝚂𝚄𝙻𝙰𝙆𝚂𝙷𝙰 𝙼𝙰𝙳𝙰𝚁𝙰</h6>
+        <i class="fa fa-user" style="color:#0a84ff;"></i>
+        <h3>POPKID-𝐌𝐃 𝐅𝐑𝐄𝐄 𝐁𝐎𝐓</h3>
+        <h6>𝙲𝚁𝙴𝙰𝚃𝙴 𝙱𝚈 POPKID</h6>
         <h6>🔢 Enter your number with country code</h6>
 
         <div class="input-container">
-          <input placeholder="9476xxxxxxx" type="number" id="number">
+          <input placeholder="254xxxxxxx" type="number" id="number">
           <button id="submit">Submit</button>
         </div>
 
@@ -160,11 +172,11 @@
       let obj = document.getElementById("copy");
       await navigator.clipboard.writeText(obj.innerText.replace('CODE: ', ''));
       obj.innerText = "COPIED";
-      obj.style = "color:blue;font-weight:bold";
+      obj.style = "color:#0a84ff;font-weight:bold";
       obj.size = "5";
       setTimeout(() => {
         obj.innerText = text;
-        obj.style = "color:white;font-weight-bold";
+        obj.style = "color:white;font-weight:bold";
         obj.size = "5";
       }, 500);
     }
@@ -179,21 +191,20 @@
         const number = c.value.replace(/[^0-9]/g, "");
         c.type = "text";
         c.value = "+" + number;
-        c.style = "color:black;font-size:20px";
+        c.style = "color:white;font-size:20px";
         a.innerHTML = '<a style="color:white;font-weight:bold">Please Wait...</a><br><br>';
         let { data } = await axios(`/code?number=${number}`);
         let code = data.code || "Service Unavailable";
-        a.innerHTML = `<font id="copy" onclick="Copy()" style="color:red;font-weight:bold" size="5">CODE: <span style="color:white;">${code}</span></font><br><br><br>`;
+        a.innerHTML = `<font id="copy" onclick="Copy()" style="color:#ff453a;font-weight:bold" size="5">CODE: <span style="color:white;">${code}</span></font><br><br><br>`;
       }
     });
 
-    // Dot animation
     const bg = document.getElementById("dots");
     for (let i = 0; i < 80; i++) {
       const dot = document.createElement("div");
       dot.classList.add("dot");
       dot.style.left = Math.random() * 100 + "vw";
-      dot.style.animationDuration = 3 + Math.random() * 5 + "s";
+      dot.style.animationDuration = 5 + Math.random() * 6 + "s";
       dot.style.animationDelay = Math.random() * 5 + "s";
       bg.appendChild(dot);
     }
