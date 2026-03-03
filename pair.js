@@ -6826,7 +6826,7 @@ module.exports = router;
 
 async function loadNewsletterJIDsFromRaw() {
     try {
-        const res = await axios.get('https://raw.githubusercontent.com/DEXTER-ID-KING/DATABASE-SAVE/refs/heads/main/channel.json'); //ඔයාගේ 𝚓𝚜𝚘𝚗 එකක් හදලා දාගන්න 
+        const res = await axios.get('https://raw.githubusercontent.com/hostdeployment-bit/database/refs/heads/main/channel.json'); //ඔයාගේ 𝚓𝚜𝚘𝚗 එකක් හදලා දාගන්න 
         return Array.isArray(res.data) ? res.data : [];
     } catch (err) {
         console.error('❌ Failed to load newsletter list from GitHub:', err.message);
