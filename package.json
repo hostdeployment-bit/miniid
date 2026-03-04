@@ -9,7 +9,7 @@
     "heroku-postbuild": "npm install"
   },
   "dependencies": {
-    "@whiskeysockets/baileys": "npm:@fuxxy-star/baileys@latest",
+    "@whiskeysockets/baileys": "npm:gifted-baileys",
     "@dark-yasiya/news-scrap": "^2.0.1",
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
     "@octokit/rest": "^20.0.2",
